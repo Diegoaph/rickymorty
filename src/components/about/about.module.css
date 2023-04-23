@@ -1,0 +1,26 @@
+.aboutsection{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    height: 80vh;
+    background-image: url(../assets/Daco_48270.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    color: aliceblue;
+}
+.aboutcontent{
+    width: 50vw;
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.233),rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.815),rgba(169, 169, 169, 0.473));
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.abouttitle{
+    font-size: 50px;
+    width: 50vw;
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.233),rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.815),rgba(169, 169, 169, 0.473));
+    border-radius: 15px;
+    padding: 10px;
+}

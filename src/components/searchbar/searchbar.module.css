@@ -19,7 +19,10 @@
     z-index: 1;
 }
 
-
+.navlink{
+    color: rgb(198, 211, 171);
+    text-decoration: none;
+  }
 
 .innerbutton{
     background: black;

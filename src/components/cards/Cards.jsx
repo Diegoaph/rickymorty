@@ -1,7 +1,6 @@
 import Card from '../card/Card';
 import style from './cards.module.css';
 
-import { NavLink } from 'react-router-dom';
 export default function Cards({characters, onClose}) {
    return (
       <div className={style.cards}>{

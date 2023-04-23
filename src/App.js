@@ -13,6 +13,7 @@ const URL_BASE = 'https://be-a-rym.up.railway.app/api'
 function App() {
    
    const [ characters,setCharacters ]= useState([]);
+   
    const onSearch = (id)=> {
       axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
          if (data.name) {

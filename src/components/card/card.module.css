@@ -1,9 +1,10 @@
-.card{
-    color: antiquewhite;
-    border: solid 1px white;
+.card{ 
+  color: antiquewhite;
+    border: solid 05px rgb(200, 235, 148);
+    border-style: groove;
     padding:20px;
     width: 100%;
-    height: auto;
+    height:auto;
     position: relative;
     background-color: rgba(5, 26, 26, 0.781);
     border-radius: 10px;
@@ -17,6 +18,10 @@
     
 }
 
-  .navlink{
-    color: rgb(245, 245, 245);
-  }
+.navlink{
+  color: rgb(245, 245, 245);
+}
+
+.h5{
+  margin: 2px
+}

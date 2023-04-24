@@ -5,7 +5,7 @@
     background: linear-gradient( rgb(119, 116, 116),rgb(119, 116, 116, 0.582));
     width: 100%;
     z-index: -2;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
 }
 
@@ -18,7 +18,7 @@
     font-weight: bold;
     position: relative;
     border-radius: 15px;
-    margin: 30px;
+    margin: 5px;
     z-index: 1;
 }
 
@@ -81,5 +81,14 @@
 }
 
 .logo{
+    display: flex;
+    flex-direction: column;
     height: 60px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.logout{
+    color: antiquewhite;
+    font-weight: bold;
 }

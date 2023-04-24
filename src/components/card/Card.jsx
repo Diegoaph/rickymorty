@@ -1,7 +1,7 @@
 import style from './card.module.css';
 import { NavLink } from 'react-router-dom';
 
-export default function Card({ onClose,id,name,image,species,gender,origin,status}) {
+export default function Card({ onClose,id,name,image}) {
 
 
 

@@ -1,5 +1,6 @@
 import style from './App.module.css';
 import Cards from './components/cards/Cards.jsx';
+import Form from './components/login/Login.jsx';
 import Detail from './components/detail/Detail.jsx';
 import About from './components/about/About.jsx';
 import Nav from './components/nav/Nav.jsx';
@@ -7,8 +8,6 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Routes,Route,BrowserRouter } from 'react-router-dom';
 
-const API_KEY = 'apikey'
-const URL_BASE = 'https://be-a-rym.up.railway.app/api'
 
 function App() {
    
@@ -35,7 +34,7 @@ function App() {
             <Routes>
 
                <Route
-               path='/' element={<Cards characters={characters} onClose={onClose}/>} 
+               path='/home' element={<Cards characters={characters} onClose={onClose}/>} 
                /> 
 
                <Route
@@ -44,6 +43,10 @@ function App() {
 
                <Route
                path='/detail/:id' element={<Detail characters={characters}/>} 
+               />
+
+               <Route
+               path='/' element={<Form/>} 
                />
 
             </Routes>

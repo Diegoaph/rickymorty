@@ -3,7 +3,7 @@ import style from './nav.module.css';
 export default function Nav(props) {
    return (
       <div className={style.nav}>
-         <Searchbar onSearch={props.onSearch}/>
+         <Searchbar  logout={props.logout}  onSearch={props.onSearch}/>
       </div>
    );
 }

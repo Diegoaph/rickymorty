@@ -24,7 +24,7 @@ export default function Searchbar(props) {
 
          <button className={style.button} ><button onClick={()=>{props.onSearch(id); setId("")}} className={style.innerbutton} ><NavLink className={style.navlink}  to='/home'> Agregar</NavLink></button></button>
 
-         <div className={style.logout}><img onClick={()=>navigate("/home")} src={logout} alt="Logo" className={style.logo} />LogOut</div>
+         <div className={style.logout}><img onClick={props.logout} src={logout} alt="Logo" className={style.logo} />LogOut</div>
 
       </div>
    );

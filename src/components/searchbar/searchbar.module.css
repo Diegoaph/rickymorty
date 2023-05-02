@@ -1,5 +1,3 @@
-
-
 .searchbarcontainer{
     display:flex;
     background: linear-gradient( rgb(119, 116, 116),rgb(119, 116, 116, 0.582));
@@ -23,10 +21,36 @@
     z-index: 1;
 }
 
+.goldenButton{
+    cursor: pointer;
+    border: none;
+    padding: 3px 3px;
+    color: antiquewhite;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 15px;
+    margin: 5px;
+    z-index: 1;
+}
+
+.blueButton{
+    cursor: pointer;
+    border: none;
+    padding: 3px 3px;
+    color: antiquewhite;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 15px;
+    margin: 5px;
+    z-index: 1;
+}
+
 .navlink{
     color: rgb(198, 211, 171);
     text-decoration: none;
-  }
+}
 
 .innerbutton{
     background: black;
@@ -57,6 +81,36 @@
     animation: glow 20s linear infinite;
 }
 
+.blueButton::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    background: linear-gradient(45deg,rgb(33, 85, 145), green,cyan,green,rgb(33,85,145), green,cyan);
+    background-size: 800%;
+    border-radius: 0px;
+    filter: blur(8px);
+    animation: glow 20s linear infinite;
+}
+
+.goldenButton::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    background: linear-gradient(45deg,rgb(236, 105, 17),gold,yellow,white,silver,white,yellow,gold,rgb(221,172,9),rgb(236, 105, 17));
+    background-size: 800%;
+    border-radius: 0px;
+    filter: blur(8px);
+    animation: glow 20s linear infinite;
+}
+
 @keyframes glow {
     0%{
         background-position: 0 0;
@@ -78,7 +132,8 @@
     font-weight: bold;
     position: relative;
     border-radius: 12px;
-    margin: 30px;
+    margin:0px;
+    width: 10rem;
 }
 
 .logo{

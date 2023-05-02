@@ -36,20 +36,68 @@ const Form = ({login}) => {
     return(
         
         <form onSubmit={handleOnSubmit} className={style.form}>
-        
-            <h1 className={style.titulo}>Log In</h1>
-            <span>rick@morty.app Henry.1</span>
+            <hr />
+            <hr />
+            <hr />
+            <h1 className={style.titulo}>Iniciar Sesión</h1>
+            
             <br /><br />
         
-            <label htmlFor="email">Email: </label>
-            <input type="email" name="email" placeholder="ejemplo@mail.com" value={userData.email} onChange={handleChange} />
+            <label className={style.label} htmlFor="email">
+                <p className={style.innerlabel}>
+                    <span className={style.innerlabelspan}> Email: </span>
+                </p>
+            </label> 
+            
+
+            <label className={style.label} htmlFor="password">
+                <p className={style.innerlabel}>
+                <input  className={style.input} type="email" name="email" placeholder="ejemplo@mail.com" value={userData.email} onChange={handleChange} />
+                </p>
+            </label>
+
+
+            
+
+
             {errors.email && <p className={style.errorMessage}><img  src={errorimg} alt="ERROR" className={style.errorimg} />{errors.email}</p>}  
+
             <hr />
-            <label htmlFor="password">Password: </label>  
-            <input type="text" name="password" placeholder="tu contraseña" value={userData.password} onChange={handleChange}/>
+
+            <label className={style.label} htmlFor="password">
+                <p className={style.innerlabel}>
+                    <span className={style.innerlabelspan}> Password: </span>
+                </p>
+            </label> 
+
+            <label className={style.label} htmlFor="password">
+                <p className={style.innerlabel}>
+                <input className={style.input} type="password" name="password" placeholder="Tu contraseña" value={userData.password} onChange={handleChange}/>
+                </p>
+            </label>
+            
+
+
             {errors.password && <p className={style.errorMessage}><img  src={errorimg} alt="ERROR" className={style.errorimg} />{errors.password}</p>} 
+
             <hr />
+
             <button  disabled={!userData.email||!userData.password||errors.email||errors.password} >Submit</button>
+
+
+            
+           
+            <hr />
+            <hr />
+            <hr />
+            <span className={style.oculto}>rick@morty.app</span>
+            <span className={style.oculto}>Henry.1</span>
+            <hr />
+            <hr />
+            <hr />
+            
+            
+           
         </form>
         
 

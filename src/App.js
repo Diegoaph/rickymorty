@@ -1,6 +1,7 @@
 import style from './App.module.css';
 import Cards from './components/cards/Cards.jsx';
 import Form from './components/form/Form.jsx';
+import Favorites from './components/favorites/Favorites';
 import Detail from './components/detail/Detail.jsx';
 import About from './components/about/About.jsx';
 import Nav from './components/nav/Nav.jsx';
@@ -12,7 +13,6 @@ function App() {
    const location = useLocation();
    const navigate = useNavigate();
    const path = location.pathname
-   console.log(path);
    const [ characters,setCharacters ]= useState([]);
    const [ access,setAccess ]= useState(false);
    const EMAIL = 'rick@morty.app'
@@ -36,7 +36,7 @@ function App() {
       if (userData.password === PASSWORD && userData.email ===EMAIL){
          setAccess(true)
          navigate("/home")
-      }
+      }else{alert("Algun dato es incorrecto")}
    }
 
    const logout = ()=> {
@@ -71,6 +71,10 @@ function App() {
 
                   <Route
                   path='/' element={<Form login={login}/>} 
+                  />
+
+                  <Route
+                  path='/favorites' element={<Favorites/>} 
                   />
 
                </Routes>

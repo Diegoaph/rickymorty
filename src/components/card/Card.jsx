@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { useState,useEffect } from 'react';
 
 
-function Card({ onClose,id,name,image,addFav,removeFav, myFavorites}) {
+function Card({ onClose,id,name,image,addFav,removeFav, myFavorites, species, gender, origin, type, status}) {
    
    const [isFav,SetIsFav] = useState(false);
    const location = useLocation();
@@ -19,7 +19,6 @@ function Card({ onClose,id,name,image,addFav,removeFav, myFavorites}) {
          addFav({ id,name,image})
       }
    }
-
    useEffect(()=>{
       myFavorites.forEach((fav)=>{
          if (fav.id === id) {
@@ -37,7 +36,11 @@ function Card({ onClose,id,name,image,addFav,removeFav, myFavorites}) {
             <br></br>
             <button className={style.favButton} onClick={handleFavorite}>{isFav ? '❤️' : '🤍'}</button>
          </div>}
-
+            <h6 className="h6">{status}</h6>
+            <h6 className="h6">{type}</h6>
+            <h6 className="h6">{origin}</h6>
+            <h6 className="h6">{gender}</h6>
+            <h6 className="h6">{species}</h6>
 
             <br></br>
             <NavLink to={`/detail/${id}`}><img src={image} alt='Img' /></NavLink>

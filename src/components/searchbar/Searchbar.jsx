@@ -14,7 +14,7 @@ export default function Searchbar(props) {
    return (
       <div className={style.searchbarcontainer}>
 
-         <div className={style.logout}><img onClick={()=>navigate("/home")} src={logo} alt="Logo" className={style.logo} /></div>
+      <button className={style.blueButton} ><div className={style.logout}><img onClick={()=>navigate("/home")} src={logo} alt="Logo" className={style.logo} />Home</div></button>
          
          <button className={style.blueButton} ><button className={style.innerbutton} ><NavLink className={style.navlink}  to='/about'> About </NavLink></button></button>
 
@@ -29,7 +29,7 @@ export default function Searchbar(props) {
 
          <button className={style.button} ><button onClick={()=>{props.onSearch(id); setId("")}} className={style.innerbutton} ><NavLink className={style.navlink}  to='/home'> Agregar</NavLink></button></button>
 
-         <div className={style.logout}><img onClick={props.logout} src={logout} alt="Logo" className={style.logo} />LogOut</div>
+         <button className={style.button} ><div className={style.logout}><img onClick={props.logout} src={logout} alt="Logo" className={style.logo} />LogOut</div></button>
 
       </div>
    );

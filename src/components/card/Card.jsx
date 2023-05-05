@@ -16,7 +16,7 @@ function Card({ onClose,id,name,image,addFav,removeFav, myFavorites, species, ge
          removeFav(id)
       }else{
          SetIsFav(true);
-         addFav({ id,name,image})
+         addFav({ id,name,image,gender})
       }
    }
    useEffect(()=>{
@@ -36,11 +36,11 @@ function Card({ onClose,id,name,image,addFav,removeFav, myFavorites, species, ge
             <br></br>
             <button className={style.favButton} onClick={handleFavorite}>{isFav ? '❤️' : '🤍'}</button>
          </div>}
-            <h6 className="h6">{status}</h6>
+            {/* <h6 className="h6">{status}</h6>
             <h6 className="h6">{type}</h6>
             <h6 className="h6">{origin}</h6>
             <h6 className="h6">{gender}</h6>
-            <h6 className="h6">{species}</h6>
+            <h6 className="h6">{species}</h6> */}
 
             <br></br>
             <NavLink to={`/detail/${id}`}><img src={image} alt='Img' /></NavLink>

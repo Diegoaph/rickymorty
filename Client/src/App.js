@@ -20,10 +20,10 @@ function App() {
    
    const onSearch = (id)=> {
       axios(`http://localhost:3001/rickandmorty/character/${id}`).then(({ data }) => {
-         if (data.name) {
-            setCharacters((oldChars) => [data,...oldChars]);
-         } else {
+         if (!data.name) {
             window.alert('¡No hay personajes con este ID!');
+         } else {
+            setCharacters((oldChars) => [data,...oldChars]);
          }
       });
    }
@@ -32,11 +32,15 @@ function App() {
       !access && navigate('/');
    }, [access]);
    
-   const login = (userData)=> {
-      if (userData.password === PASSWORD && userData.email ===EMAIL){
-         setAccess(true)
-         navigate("/home")
-      }else{alert("Algun dato es incorrecto")}
+   function login(userData) {
+      const { email, password } = userData;
+      const URL = 'http://localhost:3001/rickandmorty/login/';
+      axios(URL + `?email=${email}&password=${password}`)
+      .then(({ data }) => {
+         const { access } = data;
+         setAccess(data);
+         access && navigate('/home');
+      });
    }
 
    const logout = ()=> {
@@ -47,9 +51,9 @@ function App() {
       
    }
 
-
+   //arreglar onclose//
    const onClose= (id)=>{
-      const fliteredChars= characters.filter(character => character.id!== parseInt(id))
+      const fliteredChars= characters.filter(character => character.id !== +id)
       setCharacters(fliteredChars)
    }
    return (

@@ -9,9 +9,11 @@ const postFav = (req, res) => {
 
 const deleteFav = (req, res) => {
   const { characterId } = req.params;
-  myFavorites = myFavorites.filter((fav) => fav.characterId !== +characterId);
+  myFavorites.splice(myFavorites.findIndex(fav => fav.characterId === +characterId), 1);
   return res.status(200).json(myFavorites);
 };
+
+
 
 module.exports = {
   postFav,

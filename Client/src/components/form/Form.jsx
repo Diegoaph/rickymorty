@@ -37,8 +37,6 @@ const Form = ({login}) => {
         
         <form onSubmit={handleOnSubmit} className={style.form}>
             <hr />
-            <hr />
-            <hr />
             <h1 className={style.titulo}>Iniciar Sesión</h1>
             
             <br /><br />
@@ -75,28 +73,20 @@ const Form = ({login}) => {
                 <input className={style.input} type="password" name="password" placeholder="Tu contraseña" value={userData.password} onChange={handleChange}/>
                 </p>
             </label>
-            
-
-
+    
             {errors.password && <p className={style.errorMessage}><img  src={errorimg} alt="ERROR" className={style.errorimg} />{errors.password}</p>} 
 
-            <hr />
-
-            <button  disabled={!userData.email||!userData.password||errors.email||errors.password} >Submit</button>
-
-
-            
-           
-            <hr />
-            <hr />
-            <hr />
             <span className={style.oculto}>rick@morty.app</span>
             <span className={style.oculto}>Henry.1</span>
+           
+            <button className={style.button} >
+                <button className={style.innerbutton}  >
+                    <button  className={style.submit} disabled={!userData.email||!userData.password||errors.email||errors.password} >Ingresar</button>
+                </button>
+            </button>
             <hr />
-            <hr />
-            <hr />
-            
-            
+           
+         
            
         </form>
         

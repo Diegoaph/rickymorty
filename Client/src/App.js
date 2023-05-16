@@ -47,15 +47,14 @@ function App() {
          alert('sesion finalizada')
          setAccess(false)
          navigate("/")
-         console.log("logout");
       
    }
 
-   //arreglar onclose//
-   const onClose= (id)=>{
-      const fliteredChars= characters.filter(character => character.id !== +id)
-      setCharacters(fliteredChars)
-   }
+   const onClose = (id) => {
+      const filteredChars = characters.filter((character) => character.id !== id);
+      setCharacters(filteredChars);
+   };
+    
    return (
       <div className={style.App}>
                {path !== '/'&& <Nav logout={logout} onSearch= {onSearch}/>}

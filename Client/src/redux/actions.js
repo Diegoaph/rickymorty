@@ -14,17 +14,26 @@ export const addFav = (character) => {
 };
 
 export const removeFav = (id) => {
-   const endpoint = 'http://localhost:3001/rickandmorty/fav/' + id;
-   return (dispatch) => {
-      axios.delete(endpoint)
-         .then(({ data }) => {
-         return dispatch({
-            type: REMOVE_FAV,
-            payload: data,
+   const endpoint = `http://localhost:3001/rickandmorty/fav/${id}`;
+   return (dispatch, getState) => {
+     axios.delete(endpoint)
+       .then(({ data }) => {
+        
+         const { myFavorites } = getState();
+         const updatedFavorites = myFavorites.filter((fav) => fav.id !== id);
+         
+         dispatch({
+           type: REMOVE_FAV,
+           payload: updatedFavorites,
          });
-      });
+       })
+       .catch((error) => {
+         // Manejar el error aquí
+         console.error('Error al eliminar el favorito:', error);
+       });
    };
-};
+ };
+ 
 
 export const filterCards =(gender)=>{
     return {

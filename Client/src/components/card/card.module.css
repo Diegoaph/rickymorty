@@ -3,12 +3,13 @@
     border: solid 05px rgb(200, 235, 148);
     border-style: groove;
     padding:20px;
-    width: 100%;
+    width: 22vw;
     height:24em;
     position: relative;
     background-color: rgba(5, 26, 26, 0.781);
     border-radius: 40px;
     overflow: hidden;
+    margin:1vw;
     
 }
 .card img{

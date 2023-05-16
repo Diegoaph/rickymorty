@@ -126,14 +126,18 @@
 .searchbar{
     background: #363535;
     border: none;
-    padding: 16px 32px;
+    padding: 19px;
     color: antiquewhite;
     font-size: 24px;
     font-weight: bold;
     position: relative;
-    border-radius: 12px;
+    border-radius: 500px;
     margin:0px;
-    width: 10rem;
+    width: 4rem;
+}
+
+.searchbar:hover {
+    width: 14rem;
 }
 
 .logo{

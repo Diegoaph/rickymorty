@@ -25,9 +25,13 @@ export default function Searchbar(props) {
 
 
          
-         <input type='search' placeholder='Numero de ID (¡Hay 826!)' onChange={handleChange} value={id} className={style.searchbar}/>
+         <input type='search' placeholder='🔍 ID Number' onChange={handleChange} value={id} className={style.searchbar}/>
 
-         <button className={style.button} ><button onClick={()=>{props.onSearch(id); setId("")}} className={style.innerbutton} ><NavLink className={style.navlink}  to='/home'> Agregar</NavLink></button></button>
+         <button className={style.button} >
+            <button className={style.innerbutton} onClick={()=>{props.onSearch(id); setId("")}} >
+               <NavLink className={style.navlink}  to='/home'> Agregar</NavLink>
+            </button>
+         </button>
 
          <button className={style.button} ><div className={style.logout}><img onClick={props.logout} src={logout} alt="Logo" className={style.logo} />LogOut</div></button>
 

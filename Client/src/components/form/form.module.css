@@ -3,13 +3,18 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   background: linear-gradient(60deg, rgba(255, 255, 255, 0.445),rgba(255, 255, 0, 0.418), rgba(153, 205, 50, 0.329), rgba(0, 128, 0, 0.185), rgba(128, 128, 0, 0.171),rgba(0, 128, 0, 0.377),rgba(153, 205, 50, 0.384),rgba(255, 255, 0, 0.37),rgba(255, 255, 255, 0.342));
-   border-radius: 300em;
-   width: 50vw;
-   height: 100vh;
+   background: linear-gradient(60deg, rgba(255, 255, 255, 0.445),rgba(255, 255, 0, 0.034), rgba(153, 205, 50, 0.089), rgba(0, 128, 0, 0.185), rgba(128, 128, 0, 0.171),rgba(0, 128, 0, 0.377),rgba(153, 205, 50, 0.137),rgba(255, 255, 0, 0),rgba(255, 255, 255, 0.342));
+   border-radius: 100%;
+   width: 45vw;
+   height: auto;
+   min-height: 45vw;
+   margin-top: 3rem;
 }
+
+
 .errorimg{
    height: 10vh;
+   cursor:default;
 }
 .errorMessage{
    display: flex;
@@ -19,20 +24,23 @@
    font-size: larger;
    background-color: red;
    border-radius: 100%;
+   cursor:default;
 }
 .titulo{
-   background: linear-gradient(60deg,rgba(0, 0, 0, 0.247),rgba(128, 128, 128, 0.644),rgba(0, 0, 0, 0.288));
-   width: 15vw;
+   background: linear-gradient(60deg,rgba(0, 0, 0, 0.144),rgba(50, 50, 78, 0.678),rgba(0, 0, 0, 0.151));
+   width: 20vw;
    border-radius: 10em;
+   cursor:default;
 }
 
 .oculto{
    font-size: xx-small;
    color: rgba(153, 205, 50, 0.144);
+   cursor:progress;
 }
 
 .label{
-   cursor: pointer;
+   cursor:default;
    border: none;
    padding: 3px 3px;
    color: antiquewhite;
@@ -46,7 +54,7 @@
 
 .innerlabel{
    background: black;
-   cursor: pointer;
+   cursor:default;
    border: none;
    padding: 16px 31px;
    color: antiquewhite;
@@ -84,7 +92,61 @@
    color: antiquewhite;
    border-radius: 0.5em;
    font-size: large;
+   border: none;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.button{
+   border: none;
+   padding: 3px 3px;
+   color: antiquewhite;
+   font-size: 24px;
+   font-weight: bold;
+   position: relative;
+   border-radius: 15px;
+   margin: 5px;
+   z-index: 1;
+}
+
+.innerbutton{
+   background: black;
+   border: none;
+   padding: 16px 31px;
+   color: antiquewhite;
+   font-size: 24px;
+   font-weight: bold;
+   position: relative;
+   border-radius: 15px;
+   margin: 0px;
+   z-index: 2;
+}
+
+.button::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: -10;
+   background: linear-gradient(45deg,olive, green,yellowgreen,yellow,white,yellow,yellowgreen,green,olive, green,yellowgreen,yellow,white);
+   background-size: 800%;
+   border-radius: 0px;
+   filter: blur(8px);
+   animation: glow 40s linear infinite;
+}
+
+.submit{
+   font-size: large;
+   background-color: rgba(0, 0, 0, 0);
+   color: greenyellow;
+   border: none;
+   cursor: pointer;
+}
+
+.submit:disabled{
+   color: rgba(0, 0, 0, 0);
+   cursor:not-allowed;
 }
 
 @keyframes glow {

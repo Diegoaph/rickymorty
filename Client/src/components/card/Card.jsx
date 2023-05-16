@@ -5,11 +5,14 @@ import { connect } from 'react-redux';
 import { useState,useEffect } from 'react';
 
 
-function Card({ onClose,id,name,image,addFav,removeFav, myFavorites, species, gender, origin, type, status}) {
+function Card({
+    onClose,id,name,image,addFav,removeFav, myFavorites, species, gender, origin, type, status
+   }) {
    
    const [isFav,SetIsFav] = useState(false);
    const location = useLocation();
    const path = location.pathname
+
    const handleFavorite = ()=> {
       if (isFav) {
          SetIsFav(false);
@@ -19,13 +22,14 @@ function Card({ onClose,id,name,image,addFav,removeFav, myFavorites, species, ge
          addFav({ id,name,image,gender})
       }
    }
+   
    useEffect(()=>{
       myFavorites.forEach((fav)=>{
          if (fav.id === id) {
             SetIsFav(true);
          }
       });
-   },[myFavorites]);
+   },[myFavorites,removeFav]);
 
    return (
       <div className={style.card}>

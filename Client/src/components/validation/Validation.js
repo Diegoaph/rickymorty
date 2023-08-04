@@ -1,25 +1,24 @@
-
 const validation = (userData) => {
+    const errors = {};
 
-        const errors = {};
-      
-        if (!/^(?=.*[A-Z])(?=.*\d).{5,}$/.test(userData.password)) {
-          errors.password = 'debe tener al menos seis caracteres, un numero y una mayuscula';
-        }
-      
-        if (!/^\S{1,35}@\S+\.\S+$/.test(userData.email)) {
-          errors.email = 'Ingresa un eMail valido';
-        }
+    if (!/^(?=.*[A-Z])(?=.*\d).{5,}$/.test(userData.password)) {
+        errors.password =
+            "Must have a capital, a number and at leat six characters";
+    }
 
-        if (!userData.password) {
-          errors.password = '';
-      }
-    
-        if (!userData.email) {
-            errors.email = '';
-        }
+    if (!/^\S{1,35}@\S+\.\S+$/.test(userData.email)) {
+        errors.email = "enter a valid eMail";
+    }
 
-        return errors;
-      };
+    if (!userData.password) {
+        errors.password = "";
+    }
+
+    if (!userData.email) {
+        errors.email = "";
+    }
+
+    return errors;
+};
 
 export default validation;

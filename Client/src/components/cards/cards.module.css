@@ -1,8 +1,19 @@
-.cards{
+/* .cards{
     padding: 2vw 6vw 2vw 0vw;
     max-width: 1200px;
     margin:0 auto;
     display: grid;
     grid-gap: 10em;
     grid-template-columns: repeat(auto-fit,minmax(15em,1fr));
+} */
+
+.cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    background-color: rgba(0, 255, 255, 0.116);
+    width: 90vw;
 }

@@ -133,7 +133,8 @@
     position: relative;
     border-radius: 500px;
     margin:0px;
-    width: 4rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .searchbar:hover {

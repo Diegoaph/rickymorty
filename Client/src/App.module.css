@@ -1,22 +1,21 @@
 .App {
-   display: flex;
-   flex-direction: column;
-   text-align: center;
-   align-items: center;
-   background-image: url("./components/assets/wallpapergalaxia.jpg");
-   background-size: cover;
-   min-height: 100vh;
-   min-width:100%;
-   z-index: -9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-image: url("./components/assets/wallpapergalaxia.jpg");
+    background-size: cov er;
+    min-height: 100vh;
+    min-width: 100%;
+    z-index: -9;
 }
 
 .nav-link {
-   color: white;
-   text-decoration: none;
-   margin: 0 0.5em;
-   padding: 0.5em;
-   border: 2px solid white;
-   border-radius: 5px;
-   background-color: white;
- }
- 
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5em;
+    padding: 0.5em;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+}

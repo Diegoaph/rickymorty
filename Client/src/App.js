@@ -9,7 +9,7 @@ import Error from "./components/error/Error.jsx";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
-axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL = "devdiego-rickymorty-back.up.railway.app";
 function App() {
     const location = useLocation();
     const navigate = useNavigate();
@@ -35,7 +35,8 @@ function App() {
 
     function login(userData) {
         const { email, password } = userData;
-        const URL = "http://localhost:3001/rickandmorty/login/";
+        const URL =
+            "devdiego-rickymorty-back.up.railway.app/rickandmorty/login/";
         axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
             const { access } = data;
             setAccess(data);

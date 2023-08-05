@@ -35,11 +35,12 @@ function App() {
 
     function login(userData) {
         const { email, password } = userData;
-        const URL = "/rickandmorty/login/";
-        axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
+        const URL =
+            "https://devdiego-rickymorty-back.up.railway.app/rickandmorty/login/";
+        axios.get(URL, { params: { email, password } }).then(({ data }) => {
             console.log("Backend Response:", data);
             const { access } = data;
-            setAccess(data);
+            setAccess(access);
             access && navigate("/home");
         });
     }

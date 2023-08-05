@@ -21,8 +21,9 @@ function App() {
 
     const onSearch = (id) => {
         axios(`/rickandmorty/character/${id}`).then(({ data }) => {
+            console.log(data);
             if (!data.name) {
-                window.alert("¡No hay personajes con este ID!");
+                window.alert("¡There is no characters under this ID!");
             } else {
                 setCharacters((oldChars) => [data, ...oldChars]);
             }
@@ -38,7 +39,6 @@ function App() {
         const URL =
             "https://devdiego-rickymorty-back.up.railway.app/rickandmorty/login/";
         axios.get(URL, { params: { email, password } }).then(({ data }) => {
-            console.log("Backend Response:", data);
             const { access } = data;
             setAccess(access);
             access && navigate("/home");

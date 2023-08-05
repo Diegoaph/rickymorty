@@ -37,6 +37,7 @@ function App() {
         const { email, password } = userData;
         const URL = "/rickandmorty/login/";
         axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
+            console.log("Backend Response:", data);
             const { access } = data;
             setAccess(data);
             access && navigate("/home");

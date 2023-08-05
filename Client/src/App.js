@@ -36,7 +36,7 @@ function App() {
     function login(userData) {
         const { email, password } = userData;
         const URL =
-            "https://devdiego-rickymorty.vercel.app/rickandmorty/login/";
+            "devdiego-rickymorty-back.up.railway.app"/rickandmorty/login/";
         axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
             const { access } = data;
             setAccess(data);

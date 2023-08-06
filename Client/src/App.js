@@ -23,7 +23,6 @@ function App() {
         axios(
             `https://devdiego-rickymorty-back.up.railway.app/rickandmorty/character/${id}`
         ).then(({ data }) => {
-            console.log(data);
             if (!data.name) {
                 window.alert("¡There is no characters under this ID!");
             } else {

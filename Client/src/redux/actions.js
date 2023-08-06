@@ -15,7 +15,7 @@ export const addFav = (character) => {
 };
 
 export const removeFav = (id) => {
-    const endpoint = `/rickandmorty/fav/${id}`;
+    const endpoint = `https://devdiego-rickymorty-back.up.railway.app/rickandmorty/fav"/${id}`;
     return (dispatch, getState) => {
         axios
             .delete(endpoint)

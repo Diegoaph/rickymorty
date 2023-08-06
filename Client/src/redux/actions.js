@@ -15,7 +15,7 @@ export const addFav = (character) => {
 };
 
 export const removeFav = (id) => {
-    const endpoint = `https://devdiego-rickymorty-back.up.railway.app/rickandmorty/fav"/${id}`;
+    const endpoint = `https://devdiego-rickymorty-back.up.railway.app/rickandmorty/fav/${id}`;
     return (dispatch, getState) => {
         axios
             .delete(endpoint)
@@ -31,7 +31,7 @@ export const removeFav = (id) => {
                 });
             })
             .catch((error) => {
-                console.error("Error deleting from FAVs:", error);
+                console.error("Error deleting fav:", error);
             });
     };
 };

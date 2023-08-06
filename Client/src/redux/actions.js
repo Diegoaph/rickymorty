@@ -2,10 +2,10 @@ import { ADD_FAV, REMOVE_FAV, FILTER, ORDER } from "./action-types";
 import axios from "axios";
 
 export const addFav = (character) => {
-    const endpoint = "/rickandmorty/fav";
+    const endpoint =
+        "https://devdiego-rickymorty-back.up.railway.app/rickandmorty/fav";
     return (dispatch) => {
         axios.post(endpoint, character).then(({ data }) => {
-            console.log(data);
             return dispatch({
                 type: ADD_FAV,
                 payload: data,
@@ -31,7 +31,7 @@ export const removeFav = (id) => {
                 });
             })
             .catch((error) => {
-                console.error("Error al eliminar el favorito:", error);
+                console.error("Error deleting from FAVs:", error);
             });
     };
 };

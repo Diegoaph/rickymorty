@@ -1,14 +1,14 @@
-.searchbarcontainer{
-    display:flex;
-    background: linear-gradient( rgb(119, 116, 116),rgb(119, 116, 116, 0.582));
+.searchbarcontainer {
+    display: flex;
+    background: linear-gradient(rgb(119, 116, 116), rgb(119, 116, 116, 0.582));
     width: 100%;
     z-index: -2;
-    justify-content:space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 100vw;
 }
 
-.button{
+.button {
     cursor: pointer;
     border: none;
     padding: 3px 3px;
@@ -21,7 +21,7 @@
     z-index: 1;
 }
 
-.goldenButton{
+.goldenButton {
     cursor: pointer;
     border: none;
     padding: 3px 3px;
@@ -34,7 +34,7 @@
     z-index: 1;
 }
 
-.blueButton{
+.blueButton {
     cursor: pointer;
     border: none;
     padding: 3px 3px;
@@ -47,12 +47,12 @@
     z-index: 1;
 }
 
-.navlink{
+.navlink {
     color: rgb(198, 211, 171);
     text-decoration: none;
 }
 
-.innerbutton{
+.innerbutton {
     background: black;
     cursor: pointer;
     border: none;
@@ -66,7 +66,7 @@
     z-index: 2;
 }
 
-.button::before{
+.button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -74,14 +74,29 @@
     height: 100%;
     width: 100%;
     z-index: -10;
-    background: linear-gradient(45deg,olive, green,yellowgreen,yellow,white,yellow,yellowgreen,green,olive, green,yellowgreen,yellow,white);
+    background: linear-gradient(
+        45deg,
+        olive,
+        green,
+        yellowgreen,
+        yellow,
+        white,
+        yellow,
+        yellowgreen,
+        green,
+        olive,
+        green,
+        yellowgreen,
+        yellow,
+        white
+    );
     background-size: 800%;
     border-radius: 0px;
     filter: blur(8px);
     animation: glow 40s linear infinite;
 }
 
-.blueButton::before{
+.blueButton::before {
     content: "";
     position: absolute;
     top: 0;
@@ -89,14 +104,23 @@
     height: 100%;
     width: 100%;
     z-index: -10;
-    background: linear-gradient(45deg,rgb(33, 85, 145), green,cyan,green,rgb(33,85,145), green,cyan);
+    background: linear-gradient(
+        45deg,
+        rgb(33, 85, 145),
+        green,
+        cyan,
+        green,
+        rgb(33, 85, 145),
+        green,
+        cyan
+    );
     background-size: 800%;
     border-radius: 0px;
     filter: blur(8px);
     animation: glow 40s linear infinite;
 }
 
-.goldenButton::before{
+.goldenButton::before {
     content: "";
     position: absolute;
     top: 0;
@@ -104,7 +128,19 @@
     height: 100%;
     width: 100%;
     z-index: -10;
-    background: linear-gradient(45deg,rgb(236, 105, 17),gold,yellow,white,silver,white,yellow,gold,rgb(221,172,9),rgb(236, 105, 17));
+    background: linear-gradient(
+        45deg,
+        rgb(236, 105, 17),
+        gold,
+        yellow,
+        white,
+        silver,
+        white,
+        yellow,
+        gold,
+        rgb(221, 172, 9),
+        rgb(236, 105, 17)
+    );
     background-size: 800%;
     border-radius: 0px;
     filter: blur(8px);
@@ -112,18 +148,18 @@
 }
 
 @keyframes glow {
-    0%{
+    0% {
         background-position: 0 0;
     }
-    50%{
+    50% {
         background-position: 400% 0;
     }
-    100%{
+    100% {
         background-position: 0 0;
     }
 }
 
-.searchbar{
+.searchbar {
     background: #363535;
     border: none;
     padding: 19px;
@@ -132,7 +168,7 @@
     font-weight: bold;
     position: relative;
     border-radius: 500px;
-    margin:0px;
+    margin: 0px;
     width: 5rem;
     height: 5rem;
 }
@@ -141,7 +177,7 @@
     width: 14rem;
 }
 
-.logo{
+.logo {
     display: flex;
     flex-direction: column;
     height: 60px;
@@ -149,7 +185,7 @@
     cursor: pointer;
 }
 
-.logout{
+.logout {
     color: antiquewhite;
     font-weight: bold;
 }

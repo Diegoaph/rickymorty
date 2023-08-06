@@ -15,7 +15,7 @@ export default function Searchbar(props) {
         if (event.keyCode === 13) {
             // 13 is the code for the Enter key
             props.onSearch(id);
-            setId("");
+            setId(""); navigate("/home")}
         }
     };
 

@@ -23,19 +23,13 @@ const About = () => {
                 <br />
                 <br />
                 mira mis otros proyectos en mi
-                <strong>
-                    <NavLink
-                        className={style.link}
-                        to="devdiego.vercel.app">
-                        Portafolio
-                    </NavLink>
-                </strong>
-                o escribeme a{" "}
-                <NavLink
+                <strong href="devdiego.vercel.app">Portafolio</strong>o
+                escribeme a{" "}
+                <a
                     className={style.link}
-                    to="mailto:Dev.DiegoPacheco@gmail.com?subject=¡¡Hemos%20visto%20tu%20portfolio!!&body=%20Diego,%20Me%20gustar%C3%ADa%20hablar%20contigo">
+                    href="mailto:Dev.DiegoPacheco@gmail.com?subject=¡¡Hemos%20visto%20tu%20portfolio!!&body=%20Diego,%20Me%20gustar%C3%ADa%20hablar%20contigo">
                     Dev.DiegoPacheco@Gmail.com
-                </NavLink>
+                </a>
             </h3>
         </section>
     );

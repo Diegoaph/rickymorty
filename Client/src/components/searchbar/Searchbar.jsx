@@ -40,7 +40,7 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/about">
                         {" "}
-                        ❔{" "}
+                        About{" "}
                     </NavLink>
                 </button>
             </button>
@@ -51,7 +51,7 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/favorites">
                         {" "}
-                        🩶{" "}
+                        FAVs{" "}
                     </NavLink>
                 </button>
             </button>
@@ -69,7 +69,7 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/home">
                         {" "}
-                        🎲
+                        Random
                     </NavLink>
                 </button>
             </button>
@@ -85,7 +85,7 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/home">
                         {" "}
-                        ➕
+                        Add
                     </NavLink>
                 </button>
             </button>

@@ -161,15 +161,15 @@
 .searchbar {
     background: #363535;
     border: none;
-    padding: 9px;
+    padding: 2px;
     color: antiquewhite;
     font-size: 24px;
     font-weight: bold;
     position: relative;
     border-radius: 500px;
     margin: 0px;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .searchbar:hover {

@@ -12,6 +12,7 @@
     margin: 1vw;
 }
 .card img {
+    max-width: 95%;
     object-fit: contain;
     border-radius: 100%;
 }

@@ -202,6 +202,8 @@
     color: aliceblue;
     width: fit-content;
     height: fit-content;
+    padding: 5px;
+    gap: 2px;
 }
 .dice {
     display: none;

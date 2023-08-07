@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import style from "./about.module.css";
 const About = () => {
     return (
@@ -19,6 +20,16 @@ const About = () => {
                 ordenar por sus ID puedes visualizar mas información de cada
                 personaje, haciendo click sobre su tarjeta lo que te llevará a
                 la sección "Detail" de dicho personaje
+                <br />
+                <br />
+                mira mis otros proyectos en mi
+                <strong>
+                    <NavLink to="devdiego.vercel.app">Portafolio</NavLink>
+                </strong>
+                o escribeme a{" "}
+                <NavLink to="mailto:Dev.DiegoPacheco@gmail.com?subject=¡¡Hemos%20visto%20tu%20portfolio!!&body=%20Diego,%20Me%20gustar%C3%ADa%20hablar%20contigo">
+                    Dev.DiegoPacheco@Gmail.com
+                </NavLink>
             </h3>
         </section>
     );

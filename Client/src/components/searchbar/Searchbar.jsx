@@ -34,6 +34,14 @@ export default function Searchbar(props) {
                     <button className={style.innerbutton}>
                         <NavLink
                             className={style.navlink}
+                            to="/home">
+                            {" "}
+                            Home{" "}
+                        </NavLink>
+                    </button>
+                    <button className={style.innerbutton}>
+                        <NavLink
+                            className={style.navlink}
                             to="/about">
                             {" "}
                             About{" "}
@@ -45,6 +53,14 @@ export default function Searchbar(props) {
                             to="/favorites">
                             {" "}
                             FAVs{" "}
+                        </NavLink>
+                    </button>
+                    <button className={style.innerbutton}>
+                        <NavLink
+                            onClick={props.logout}
+                            className={style.navlink}
+                            to="/">
+                            Log Out
                         </NavLink>
                     </button>
                 </div>

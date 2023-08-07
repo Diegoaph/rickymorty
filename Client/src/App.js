@@ -65,7 +65,6 @@ function App() {
                 <Nav
                     logout={logout}
                     onSearch={onSearch}
-                    style={"width:100vw"}
                 />
             )}
 

@@ -15,7 +15,7 @@
         rgba(255, 255, 0, 0),
         rgba(255, 255, 255, 0.342)
     );
-    border-radius: 100%;
+    border-radius: 1rem;
     width: 75vw;
     height: auto;
     min-height: 45vw;

@@ -217,6 +217,9 @@
     }
     .dice {
         display: block;
+        border-radius: 10px;
+        color: #363535;
+        background-color: #363535;
     }
     .sandwichButton {
         display: block;

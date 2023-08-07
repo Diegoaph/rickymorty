@@ -1,25 +1,37 @@
-.detail{
+.detail {
     display: flex;
     flex-direction: column;
     color: antiquewhite;
-    background: linear-gradient(54deg, rgba(128, 128, 128, 0.171),rgba(211, 211, 211, 0.164),rgba(128, 128, 128, 0.164));
+    background: linear-gradient(
+        54deg,
+        rgba(128, 128, 128, 0.171),
+        rgba(211, 211, 211, 0.164),
+        rgba(128, 128, 128, 0.164)
+    );
     padding: 3%;
-    border-radius: 50%;
-    width: 70vw;
+    border-radius: 15px;
+    width: 80vw;
     margin-top: 5vh;
     height: min-content;
     align-items: center;
     cursor: default;
 }
 
-.titulo{
+.titulo {
     font-size: xx-large;
-    background: linear-gradient(45deg, rgba(0, 255, 255, 0.021), rgba(172, 255, 47, 0.151), rgba(0, 128, 0, 0.158), rgba(172, 255, 47, 0.11),rgba(0, 255, 255, 0.027));
+    background: linear-gradient(
+        45deg,
+        rgba(0, 255, 255, 0.021),
+        rgba(172, 255, 47, 0.151),
+        rgba(0, 128, 0, 0.158),
+        rgba(172, 255, 47, 0.11),
+        rgba(0, 255, 255, 0.027)
+    );
     border-radius: 0.3em;
     width: 30vw;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,7 +39,7 @@
     width: fit-content;
 }
 
-.texto{
+.texto {
     display: flex;
     flex-direction: column;
     font-size: larger;
@@ -42,13 +54,12 @@
     justify-content: center;
 }
 
-.texto:hover{
-    filter:drop-shadow(3vw 3vw 3vw rgb(39, 83, 26));
+.texto:hover {
+    filter: drop-shadow(3vw 3vw 3vw rgb(39, 83, 26));
     font-size: 3.2vh;
-    
 }
 
-.img{
+.img {
     border-radius: 100%;
     border-style: groove;
     border-color: rgb(150, 207, 64);
@@ -57,12 +68,17 @@
     cursor: crosshair;
 }
 
-.img:hover{
-    filter:drop-shadow(3vw 3vw 3vw rgb(39, 83, 26));
+.img:hover {
+    filter: drop-shadow(3vw 3vw 3vw rgb(39, 83, 26));
     width: 17rem;
     height: 17rem;
 }
 
-.h5{
-    margin:1vw
+.h5 {
+    margin: 1vw;
+}
+@media (max-width: 400px) {
+    .main {
+        flex-direction: column;
+    }
 }

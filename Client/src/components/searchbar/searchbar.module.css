@@ -193,8 +193,10 @@
 }
 
 .menu {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 0;
+    top: 3rem;
     left: 0;
     background-color: #363535;
     color: aliceblue;

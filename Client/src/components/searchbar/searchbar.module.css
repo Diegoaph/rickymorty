@@ -203,7 +203,9 @@
     width: fit-content;
     height: fit-content;
 }
-
+.dice {
+    display: none;
+}
 @media (max-width: 400px) {
     .blueButton,
     .goldenButton,
@@ -211,7 +213,9 @@
     .logout {
         display: none;
     }
-
+    .dice {
+        display: block;
+    }
     .sandwichButton {
         display: block;
     }

@@ -133,7 +133,21 @@ export default function Searchbar(props) {
                     </NavLink>
                 </button>
             </button>
-
+            <button
+                onClick={() => {
+                    props.onSearch(
+                        Math.floor(Math.random() * (826 - 1 + 1)) + 1
+                    );
+                    setId("");
+                }}
+                className={style.dice}>
+                <NavLink
+                    className={style.navlink}
+                    to="/home">
+                    {" "}
+                    🎲
+                </NavLink>
+            </button>
             <input
                 type="search"
                 placeholder="  🔍  #ID "

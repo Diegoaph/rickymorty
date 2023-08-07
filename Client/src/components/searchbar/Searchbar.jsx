@@ -40,7 +40,7 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/about">
                         {" "}
-                        :grey_question:{" "}
+                        ❔{" "}
                     </NavLink>
                 </button>
             </button>
@@ -51,7 +51,7 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/favorites">
                         {" "}
-                        :grey_heart:{" "}
+                        🩶{" "}
                     </NavLink>
                 </button>
             </button>
@@ -69,7 +69,7 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/home">
                         {" "}
-                        :game_die:
+                        🎲
                     </NavLink>
                 </button>
             </button>
@@ -85,7 +85,7 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/home">
                         {" "}
-                        :heavy_plus_sign:
+                        ➕
                     </NavLink>
                 </button>
             </button>

@@ -6,6 +6,7 @@ import logout from "../assets/logout.png";
 
 export default function Searchbar(props) {
     const [id, setId] = useState("");
+    const [showMenu, setShowMenu] = useState(false);
     const navigate = useNavigate();
     const handleChange = (event) => {
         setId(event.target.value);
@@ -22,6 +23,33 @@ export default function Searchbar(props) {
 
     return (
         <div className={style.searchbarcontainer}>
+            <button
+                className={`${style.button} ${style.sandwichButton}`}
+                onClick={() => setShowMenu(!showMenu)}>
+                ☰
+            </button>
+
+            {showMenu && (
+                <div className={style.menu}>
+                    <button className={style.innerbutton}>
+                        <NavLink
+                            className={style.navlink}
+                            to="/about">
+                            {" "}
+                            About{" "}
+                        </NavLink>
+                    </button>
+                    <button className={style.innerbutton}>
+                        <NavLink
+                            className={style.navlink}
+                            to="/favorites">
+                            {" "}
+                            FAVs{" "}
+                        </NavLink>
+                    </button>
+                </div>
+            )}
+
             <button className={style.blueButton}>
                 <div className={style.logout}>
                     <img

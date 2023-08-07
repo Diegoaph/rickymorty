@@ -1,49 +1,46 @@
-.card{ 
-  color: antiquewhite;
+.card {
+    color: antiquewhite;
     border: solid 05px rgb(200, 235, 148);
     border-style: groove;
-    padding:20px;
+    padding: 20px;
     width: 22vw;
-    height:24em;
+    height: 24em;
     position: relative;
     background-color: rgba(5, 26, 26, 0.781);
     border-radius: 40px;
     overflow: hidden;
-    margin:1vw;
-    
+    margin: 1vw;
 }
-.card img{
-    object-fit: cover;
+.card img {
+    object-fit: contain;
     border-radius: 100%;
-    
 }
 
-.navlink{
-  color: rgb(245, 245, 245);
+.navlink {
+    color: rgb(245, 245, 245);
 }
 
-.h5{
-  margin: 2px
-
+.h5 {
+    margin: 2px;
 }
 
-h2{
-  margin-top:3px;
-  margin-bottom: 0%;
+h2 {
+    margin-top: 3px;
+    margin-bottom: 0%;
 }
 
-.favButton{
-  border-radius: 100%;
-  background-color: olivedrab;
+.favButton {
+    border-radius: 100%;
+    background-color: olivedrab;
 }
 
-.buttonx{
-  color: white;
-  background-color: black;
-  border-radius: 30%;
+.buttonx {
+    color: white;
+    background-color: black;
+    border-radius: 30%;
 }
 
-.buttonsContainer{
-  display: flex;
-  justify-content: space-between;
+.buttonsContainer {
+    display: flex;
+    justify-content: space-between;
 }

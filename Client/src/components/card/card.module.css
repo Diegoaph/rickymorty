@@ -4,7 +4,7 @@
     border-style: groove;
     padding: 20px;
     width: 22vw;
-    height: 24em;
+    height: fit-content;
     position: relative;
     background-color: rgba(5, 26, 26, 0.781);
     border-radius: 40px;

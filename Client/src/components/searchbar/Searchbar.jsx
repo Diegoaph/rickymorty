@@ -15,7 +15,8 @@ export default function Searchbar(props) {
         if (event.keyCode === 13) {
             // 13 is the code for the Enter key
             props.onSearch(id);
-            setId(""); navigate("/home")}
+            setId("");
+            navigate("/home");
         }
     };
 
@@ -73,8 +74,6 @@ export default function Searchbar(props) {
                 </button>
             </button>
 
-            
-
             <button className={style.button}>
                 <button
                     className={style.innerbutton}
@@ -90,7 +89,8 @@ export default function Searchbar(props) {
                     </NavLink>
                 </button>
             </button>
-<input
+
+            <input
                 type="search"
                 placeholder="  🔍  ID Number"
                 onChange={handleChange}
@@ -98,6 +98,7 @@ export default function Searchbar(props) {
                 value={id}
                 className={style.searchbar}
             />
+
             <button className={style.button}>
                 <div className={style.logout}>
                     <img

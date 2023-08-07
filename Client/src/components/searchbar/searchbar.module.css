@@ -41,7 +41,7 @@
     font-size: 24px;
     font-weight: bold;
     position: relative;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 5px;
     z-index: 1;
 }
@@ -187,4 +187,30 @@
 .logout {
     color: antiquewhite;
     font-weight: bold;
+}
+.sandwichButton {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #363535;
+    color: aliceblue;
+    width: fit-content;
+    height: fit-content;
+}
+
+@media (max-width: 400px) {
+    .blueButton,
+    .goldenButton,
+    .button,
+    .logout {
+        display: none;
+    }
+
+    .sandwichButton {
+        display: block;
+    }
 }

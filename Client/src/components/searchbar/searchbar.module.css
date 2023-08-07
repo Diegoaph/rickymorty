@@ -179,8 +179,8 @@
 .logo {
     display: flex;
     flex-direction: column;
-    height: 60px;
-    margin: 10px;
+    height: 40px;
+    margin: 5px;
     cursor: pointer;
 }
 

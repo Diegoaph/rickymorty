@@ -50,7 +50,19 @@
     color: rgb(198, 211, 171);
     text-decoration: none;
 }
-
+.innerbuttonGreen {
+    background: rgb(144, 230, 123);
+    cursor: pointer;
+    border: none;
+    color: rgb(44, 107, 7);
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 5px;
+    margin: 0px;
+    z-index: 2;
+    padding: 2px;
+}
 .innerbutton {
     background: black;
     cursor: pointer;

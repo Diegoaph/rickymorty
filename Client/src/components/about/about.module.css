@@ -42,3 +42,9 @@
     border-radius: 15rem;
     padding: 10px;
 }
+@media (max-width: 400px) {
+    .aboutcontent {
+        font-size: small;
+        width: 95vw;
+    }
+}

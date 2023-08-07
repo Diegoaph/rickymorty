@@ -48,3 +48,9 @@
         width: 95vw;
     }
 }
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: large;
+    text-shadow: black;
+}

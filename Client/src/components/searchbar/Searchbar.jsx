@@ -40,7 +40,7 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/about">
                         {" "}
-                        About{" "}
+                        :grey_question:{" "}
                     </NavLink>
                 </button>
             </button>
@@ -51,7 +51,7 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/favorites">
                         {" "}
-                        Favs{" "}
+                        :grey_heart:{" "}
                     </NavLink>
                 </button>
             </button>
@@ -69,7 +69,7 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/home">
                         {" "}
-                        Random
+                        :game_die:
                     </NavLink>
                 </button>
             </button>
@@ -85,14 +85,14 @@ export default function Searchbar(props) {
                         className={style.navlink}
                         to="/home">
                         {" "}
-                        Add
+                        :heavy_plus_sign:
                     </NavLink>
                 </button>
             </button>
 
             <input
                 type="search"
-                placeholder="  🔍  ID Number"
+                placeholder="  🔍  #ID "
                 onChange={handleChange}
                 onKeyUp={handleKeyUp}
                 value={id}

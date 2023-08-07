@@ -1,7 +1,7 @@
 .searchbarcontainer {
     display: flex;
     background: linear-gradient(rgb(119, 116, 116), rgb(119, 116, 116, 0.582));
-    width: 100%;
+    width: 100vw;
     z-index: -2;
     justify-content: space-evenly;
     align-items: center;

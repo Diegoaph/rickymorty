@@ -73,14 +73,7 @@ export default function Searchbar(props) {
                 </button>
             </button>
 
-            <input
-                type="search"
-                placeholder="  🔍  ID Number"
-                onChange={handleChange}
-                onKeyUp={handleKeyUp}
-                value={id}
-                className={style.searchbar}
-            />
+            
 
             <button className={style.button}>
                 <button
@@ -97,7 +90,14 @@ export default function Searchbar(props) {
                     </NavLink>
                 </button>
             </button>
-
+<input
+                type="search"
+                placeholder="  🔍  ID Number"
+                onChange={handleChange}
+                onKeyUp={handleKeyUp}
+                value={id}
+                className={style.searchbar}
+            />
             <button className={style.button}>
                 <div className={style.logout}>
                     <img

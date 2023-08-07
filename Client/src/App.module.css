@@ -6,9 +6,11 @@
     background-image: url("./components/assets/wallpapergalaxia.jpg");
     background-size: cover;
     min-height: 100vh;
-    min-width: 100%;
+    min-width: 100vw;
+    max-width: 100vw;
     z-index: -9;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .nav-link {

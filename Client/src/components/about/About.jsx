@@ -23,8 +23,10 @@ const About = () => {
                 <br />
                 <br />
                 mira mis otros proyectos en mi
-                <a href="devdiego.vercel.app">
-                    <strong>Portafolio</strong>
+                <a
+                    className={style.link}
+                    href="https://devdiego.vercel.app">
+                    <strong>PORTAFOLIO</strong>
                 </a>{" "}
                 o escribeme a{" "}
                 <a

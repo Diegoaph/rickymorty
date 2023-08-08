@@ -82,7 +82,13 @@ export default function Searchbar(props) {
                     Home
                 </div>
             </button>
-
+            <button className={style.goldenButton}>
+                <button
+                    className={style.innerbuttonGreen}
+                    href="https://devdiego.vercel.app">
+                    Portfolio
+                </button>
+            </button>
             <button className={style.blueButton}>
                 <button className={style.innerbutton}>
                     <NavLink
@@ -94,7 +100,7 @@ export default function Searchbar(props) {
                 </button>
             </button>
 
-            <button className={style.goldenButton}>
+            <button className={style.blueButton}>
                 <button className={style.innerbutton}>
                     <NavLink
                         className={style.navlink}

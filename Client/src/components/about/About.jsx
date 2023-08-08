@@ -23,12 +23,14 @@ const About = () => {
                 <br />
                 <br />
                 mira mis otros proyectos en mi
-                <strong href="devdiego.vercel.app">Portafolio</strong>o
-                escribeme a{" "}
+                <a href="devdiego.vercel.app">
+                    <strong>Portafolio</strong>
+                </a>{" "}
+                o escribeme a{" "}
                 <a
                     className={style.link}
                     href="mailto:Dev.DiegoPacheco@gmail.com?subject=¡¡Hemos%20visto%20tu%20portfolio!!&body=%20Diego,%20Me%20gustar%C3%ADa%20hablar%20contigo">
-                    Dev.DiegoPacheco@Gmail.com
+                    <strong>Dev.DiegoPacheco@Gmail.com</strong>
                 </a>
             </h3>
         </section>
